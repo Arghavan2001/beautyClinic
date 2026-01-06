@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>خدمات | لاغری</title>
+        <link rel="preconnect"href="https://cdn.jsdelivr.net"/>
+        <link rel="preconnect"href="https://unpkg.com"/>
+        <link rel="preload"href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+        <link rel="preload"href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="./dist/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+<body>
+   
+<!-- start header -->
+<header >
+    <div class="header d-flex justify-content-between align-items-stretch">  
+
+        <div class="header-right d-flex justify-content-start" data-aos="fade-left" >
+        
+            <img class="logo" id="desk-logo" src="./asset/img/home/default-logo.webp" alt="logo">
+            <button id="hamber" aria-label="open menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill=" var(--com-color)" stroke=" var(--com-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <line x1="3" x2="21" y1="12" y2="12" />
+                    <line x1="3" x2="21" y1="6" y2="6" />
+                    <line x1="3" x2="21" y1="18" y2="18" />
+                  </svg>
+            </button>
+          </div>
+       
+
+        <div class="header-center d-flex justify-content-center align-items-stretch">
+        
+            <!-- start mobile nav -->
+             
+              <nav id="mobile-nav">
+                <div class="d-flex justify-content-between align-items-center">
+                    <img class="logo" src="asset/img/home/default-logo.webp" alt="logo">
+                    <button class="cross" aria-label="close button">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 256 256" xml:space="preserve">
+                            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                                <path d="M 11 90 c -2.815 0 -5.63 -1.074 -7.778 -3.222 c -4.295 -4.296 -4.295 -11.261 0 -15.557 l 68 -68 c 4.297 -4.296 11.26 -4.296 15.557 0 c 4.296 4.296 4.296 11.261 0 15.557 l -68 68 C 16.63 88.926 13.815 90 11 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(214,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                                <path d="M 79 90 c -2.815 0 -5.63 -1.074 -7.778 -3.222 l -68 -68 c -4.295 -4.296 -4.295 -11.261 0 -15.557 c 4.296 -4.296 11.261 -4.296 15.557 0 l 68 68 c 4.296 4.296 4.296 11.261 0 15.557 C 84.63 88.926 81.815 90 79 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(214,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                            </g>
+                            </svg>
+                    </button>
+                    
+                </div>
+                
+                
+                <ul class="d-flex flex-column align-items-center mt-5">
+                    <li><a href="./index.html"> خانه </a></li>
+                    <li id="show-services-menu"><a> خدمات </a></li>
+                    <li><a href="./gallery.html"> گالری </a></li>
+                    <li><a href="./about.html">درباره ما </a></li>
+                    <li><a href="./contact.html">تماس با ما </a></li>
+                    
+                    
+                    
+                </ul>
+                
+              </nav>
+
+              <nav id="services-menu">
+                <div class="d-flex justify-content-between align-items-center">
+                    <img class="logo" src="asset/img/home/default-logo.webp" alt="logo">
+                    <button class="cross" aria-label="close button">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 256 256" xml:space="preserve">
+                            <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                                <path d="M 11 90 c -2.815 0 -5.63 -1.074 -7.778 -3.222 c -4.295 -4.296 -4.295 -11.261 0 -15.557 l 68 -68 c 4.297 -4.296 11.26 -4.296 15.557 0 c 4.296 4.296 4.296 11.261 0 15.557 l -68 68 C 16.63 88.926 13.815 90 11 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(214,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                                <path d="M 79 90 c -2.815 0 -5.63 -1.074 -7.778 -3.222 l -68 -68 c -4.295 -4.296 -4.295 -11.261 0 -15.557 c 4.296 -4.296 11.261 -4.296 15.557 0 l 68 68 c 4.296 4.296 4.296 11.261 0 15.557 C 84.63 88.926 81.815 90 79 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(214,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+                            </g>
+                            </svg>
+                    </button>
+                   
+                </div>
+
+                <div class="d-flex justify-content-end">
+                    <button class="back" aria-label="go back to main menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10.605" height="15.555"><path d="M10.605 12.727 5.656 7.776l4.949-4.948L7.777 0 0 7.776l7.777 7.779 2.828-2.828z"/></svg>
+                    </button>
+                </div>
+               
+                
+                <ul class="d-flex flex-column align-items-center mt-5">
+                    <li><a href="./face-surgery.html"> جراحی صورت </a></li>
+                            <li><a href="./lift.html"> لیفت صورت </a></li>
+                            <li><a href="./injection.html"> تزریق های زیبایی </a></li>
+                            <li><a href="./slimming.html"> لاغری </a></li>
+                            <li><a href="./lazer.html"> لیزر </a></li>
+                    
+                    
+                </ul>
+              </nav>
+              <div id="overlay"></div>
+              <img class="logo" id="mobo-logo" src="./asset/img/home/default-logo.webp" alt="logo" data-aos="fade-down" >
+              
+            <!-- end mobile nav-->
+
+            <!-- start desktop nav -->
+              <nav id="desktop-nav" data-aos="fade-down" >
+
+                <ul class="d-flex justify-content-center align-items-stretch main-menu">
+                    <li><a href="./index.html"> خانه </a></li>
+                    <li class="menu-item"><a> خدمات </a>
+                        <ul class="submenu my-bg d-flex flex-column">
+                            <li><a href="./face-surgery.html"> جراحی صورت </a></li>
+                            <li><a href="./lift.html"> لیفت صورت </a></li>
+                            <li><a href="./injection.html"> تزریق های زیبایی </a></li>
+                            <li><a href="./slimming.html"> لاغری </a></li>
+                            <li><a href="./lazer.html"> لیزر </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./gallery.html"> گالری </a></li>
+                    <li><a href="./about.html">درباره ما </a></li>
+                    <li><a href="./contact.html">تماس با ما </a></li>
+                    
+                    
+                    
+                </ul>
+                
+              </nav>
+              <!-- end desktop nav -->
+        </div>
+     
+      
+    
+<div class="header-left d-flex justify-content-end align-items-center" data-aos="fade-right" >
+    <a href="tel:02122567359">۰۲۱-۲۲۳۳۴۴۵۵۶۶</a>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill=" var(--com-color)" stroke=" var(--com-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+  </svg>
+</div>
+
+</div>
+   
+   </header>
+<!-- end header -->
+  <!-- start without overflowX -->
+<div class="aos-wrapper">
+ <main>
+<!-- start body -->
+ <section class="my-bg p-3">
+    <div class="body container bg-white p-2">
+    
+        <img class="rounded" src="asset/img/pages/lazer/lazer.webp" alt="lazer" data-aos="fade-down">
+    
+    <h1 data-aos="fade-left">لیزر موهای زائد</h1>
+    <p>لیزر موهای زائد یک روش مدرن و مؤثر برای کاهش چشمگیر و حتی حذف طولانی‌مدت رشد موهای ناخواسته است. در این روش از پرتو لیزر با طول موج مشخص استفاده می‌شود که توسط منبع لیزر استاندارد تولید و از طریق هندپیس روی پوست تابانده می‌شود. انرژی نوری لیزر به ملانین موجود در ریشه‌ی مو جذب شده و آن را به انرژی حرارتی تبدیل می‌کند؛ این حرارت سلول‌های مسئول رشد مو را غیرفعال کرده و به‌تدریج باعث کم شدن تراکم، نازک‌تر شدن و کُند شدن روند رشد موها می‌شود. مزیت مهم لیزر این است که نتیجه‌ی آن ماندگارتر از روش‌های موقتی مانند اصلاح یا اپیلاسیون است و معمولاً به تکرار کمتر نیاز دارد. علاوه بر این، به‌دلیل «هدف‌گیری انتخابی» ملانین، اثر لیزر عمدتاً روی فولیکول مو متمرکز است و بافت‌های اطراف حداقل آسیب را می‌بینند.</p>
+        
+    <h2 data-aos="fade-left">مزایای لیزر موهای زائد</h2>
+    <ul>
+        <li>کاهش ماندگار تراکم و قطر موها پس از چند جلسه‌ی متوالی</li>
+    <li>دقت بالا روی ناحیه‌ی هدف و حداقل درگیری پوست اطراف</li>
+    <li>سرعت درمان مناسب برای نواحی بزرگ مانند پا و دست</li>
+    <li>سرعت درمان مناسب برای نواحی بزرگ مانند پا و دست</li>
+    </ul>
+    
+    
+    <p data-aos="fade-up">
+
+        در لاین لیزر مو زائد کلینیک تخصصی زیبایی گونه از دو دستگاه خاص و تمام آمریکایی :
+    
+    لیزر الکساندرایت مدل اپیکر ساخت کمپانی Light Age آمریکا (Epi Care)
+    
+    لیزر الکساندرایت موهای زائد ساخت کمپانی DDC Technologies آمریکا
+    
+    استفاده می شود. هر دو این دستگاه ها گواهی FTA آمریکا را دارا هستند و جزء بی درد ترین دستگاه های لیزر دنیا شناخته می شوند. (نمایندگی لیزر DDC)
+    </p>
+    
+    <h6 data-aos="fade-left">۱. دستگاه لیزر مو زائد الکساندرایت تولید شده توسط DDC Technologies:</h6>
+    <p data-aos="fade-up">
+        شرکت DDC Technologies یکی از پیشروان در تولید دستگاه‌های لیزر الکساندرایت می‌باشد. این دستگاه‌ها به دلیل قدرت و دقت خود در از بین بردن موهای زائد به عنوان یکی از ابزارهای اساسی در کلینیک‌های زیبایی و پوستی به‌کار می‌روند. از ویژگی‌های مهم این دستگاه می‌توان به موارد زیر اشاره کرد:
+        
+        – قدرت و توان:
+        
+        دستگاه لیزر DDC Technologies با توان بالا، قادر به نابودی موهای زائد در مناطق مختلف از جمله صورت، دست، پا و بدن است.
+        
+        – سیستم خنک‌کننده:
+        
+        این دستگاه دارای سیستم خنک‌کننده‌ای است که به کاهش حس درد و احتمال التهاب پوست کمک می‌کند.
+        
+        – تنوع تنظیمات:
+        
+        دستگاه DDC Technologies تنظیمات مختلفی دارد که به تطابق با نوع پوست و نیازهای مشتری کمک می‌کند.
+        
+        </p>
+        <h6>۲. دستگاه لیزر مو زائد الکساندرایت مدل اپیکر (Epi Care):</h6>
+        <p data-aos="fade-up">
+        
+        دستگاه لیزر الکساندرایت مدل اپیکر یکی دیگر از دستگاه‌های پرطرفدار در حوزه از بین بردن موهای زائد است. این دستگاه توسط Light Age آمریکا تولید شده و در کلینیک‌های زیبایی و مراکز پوستی مورد استفاده قرار می‌گیرد:
+        
+        – تکنولوژی پیشرفته:
+        
+        دستگاه اپیکر با بهره‌گیری از تکنولوژی پیشرفته لیزر الکساندرایت، توانایی از بین بردن موهای ریز و زبر را داراست.
+        
+        – سرعت و کارایی:
+        
+        یکی از مزایای این دستگاه، سرعت بالا در انجام جلسات از بین بردن موهاست که به معنای کاهش زمان جلسات برای مشتریان می‌باشد.
+        
+        – حفاظت پوست:
+        
+        دستگاه اپیکر با تنظیمات مناسب، به حفاظت از پوست در مقابل حرارت اضافی و آسیب جلدی اهمیت می‌دهد.
+        
+        دستگاه‌های لیزر مو زائد الکساندرایت تولید شده توسط DDC Technologies و مدل اپیکر (Epi Care) به دلیل ویژگی‌های زیر به گزینه‌های مناسبی در کلینیک‌ گونه تبدیل شده‌اند:
+        
+        – اثربخشی در از بین بردن موها: این دستگاه‌ها با تکنولوژی لیزر الکساندرایت، توانایی بالایی در نابودی موهای زائد را دارا هستند. این اثربخشی باعث می‌شود که کلینیک‌ها این دستگاه‌ها را به عنوان یک راهکار موثر در رفع مشکلات موهای زائد به کار ببرند.
+        
+        – کارایی و سرعت: همچنین، دستگاه‌های لیزر الکساندرایت تولید شده توسط DDC Technologies و مدل اپیکر (Epi Care) به دلیل کارایی و سرعت بالای خود، در کلینیک‌ها برای انجام جلسات حذف موها بسیار مناسب هستند. این امر به کلینیک‌ها این امکان را می‌دهد که تعداد بیشتری از مشتریان خود را در یک بازه زمانی معین پذیرایی کنند.
+        
+        – تنظیمات چندگانه: وجود تنظیمات مختلف در این دستگاه‌ها به کلینیک‌ها اجازه می‌دهد تا متناسب با نوع پوست و نیازهای هر مشتری، جلسات موثری ارائه دهند. این امر به بهینه‌سازی نتایج و کاهش احتمال عوارض مرتبط با ازبردن موها کمک می‌کند.
+        
+        این دستگاه‌ها به تیم‌ پزشکی و تخصصی کلینیک‌ گونه کمک می‌کنند، تا خدمات با کیفیت و جلسات موثری را به مشتریان ارائه دهند.</p>
+    </div>
+ </section>
+ 
+<!-- end body -->
+ <!-- start gallery -->
+<div class="title">
+    <h4 data-aos="fade-up"> گالری </h4>
+ </div>
+
+ <section class=" my-bg p-3">
+
+    <div class="container bg-white p-2">
+    <div class="row">
+       
+        <h4 data-aos="fade" class="title-part d-flex justify-content-center align-items-center text-center"> نمونه کارهای لیزر </h4>
+
+       
+        <div class="row g-4 mb-2">
+
+            <div class="swiper serviceSwiper ">
+        
+                <div class="swiper-wrapper">
+        
+                    <div class="swiper-slide">
+                        <div class="p-4 d-flex gap-3 slide-box rounded">
+    
+                            <div class="frac d-flex flex-column" data-aos="fade-left">
+                                <img src="./asset/img/gallery/llaseee.png" alt="Lazer Sample">
+                                <p> قبل </p>
+                            </div>
+        
+                            <div class="frac d-flex flex-column" data-aos="fade-right">
+                                <img src="./asset/img/gallery/llaseaf.png" alt="Lazer Sample">
+                                <p> بعد </p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="p-4 d-flex gap-3 slide-box rounded">
+    
+                            <div class="frac d-flex flex-column" data-aos="fade-left">
+                                <img src="./asset/img/gallery/laserbef.png" alt="Lazer Sample">
+                                <p> قبل </p>
+                            </div>
+        
+                            <div class="frac d-flex flex-column" data-aos="fade-right">
+                                <img src="./asset/img/gallery/laseraf.png" alt="Lazer Sample">
+                                <p> بعد </p>
+                            </div>
+        
+                        </div>
+                      </div>
+        
+                      <div class="swiper-slide">
+                        <div class="p-4 d-flex gap-3 slide-box rounded">
+    
+                            <div class="frac d-flex flex-column" data-aos="fade-left">
+                                <img src="./asset/img/gallery/llaseee.png" alt="Lazer Sample">
+                                <p> قبل </p>
+                            </div>
+        
+                            <div class="frac d-flex flex-column" data-aos="fade-right">
+                                <img src="./asset/img/gallery/llaseaf.png" alt="Lazer Sample">
+                                <p> بعد </p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="p-4 d-flex gap-3 slide-box rounded">
+    
+                            <div class="frac d-flex flex-column" data-aos="fade-left">
+                                <img src="./asset/img/gallery/laserbef.png" alt="Lazer Sample">
+                                <p> قبل </p>
+                            </div>
+        
+                            <div class="frac d-flex flex-column" data-aos="fade-right">
+                                <img src="./asset/img/gallery/laseraf.png" alt="Lazer Sample">
+                                <p> بعد </p>
+                            </div>
+        
+                        </div>
+                      </div>
+        
+                      <div class="swiper-slide">
+                        <div class="p-4 d-flex gap-3 slide-box rounded">
+    
+                            <div class="frac d-flex flex-column" data-aos="fade-left">
+                                <img src="asset/img/gallery/llaseee.png" alt="Lazer Sample">
+                                <p> قبل </p>
+                            </div>
+        
+                            <div class="frac d-flex flex-column" data-aos="fade-right">
+                                <img src="./asset/img/gallery/llaseaf.png" alt="Lazer Sample">
+                                <p> بعد </p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="p-4 d-flex gap-3 slide-box rounded">
+    
+                            <div class="frac d-flex flex-column" data-aos="fade-left">
+                                <img src="./asset/img/gallery/laserbef.png" alt="Lazer Sample">
+                                <p> قبل </p>
+                            </div>
+        
+                            <div class="frac d-flex flex-column" data-aos="fade-right">
+                                <img src="./asset/img/gallery/laseraf.png" alt="Lazer Sample">
+                                <p> بعد </p>
+                            </div>
+        
+                        </div>
+                      </div>
+                
+                 
+                </div>
+        
+                <div class="swiper-pagination"></div>
+              </div>
+
+        
+
+
+         
+
+
+        </div>
+    </div>
+    
+
+    <div class="row p-2">
+        <a href="./gallery.html" class="my-btn px-4 py-2"><span> مشاهده همه </span></a>
+    </div>
+   
+    
+  
+</div>
+  
+ </section>
+
+<!-- end gallery -->
+<!-- end gallery -->
+        <!-- start consultation form -->
+        <div class="title" id="consultation-req-form">
+            <h4 data-aos="fade-up"> درخواست مشاوره رایگان در کلینیک نغمه </h4>
+         </div>
+           <section class="consultation d-flex align-items-center">
+            <div class="row justify-content-center">
+        
+                
+                
+            <form data-aos="fade-left" name="consultation" netlify class="form col-6 col-lg-3 col-md-4 d-flex flex-column justify-content-center p-3" method="POST">
+                
+               
+                
+                <div class="mb-3">
+                <input type="text" name="name" class="pt-2 pb-2" placeholder="نام شما">
+                <span class="error-msg"></span>
+                 </div>
+            
+            
+                 <div class="mb-3">
+                <input type="tel" name="phone" class="pt-2 pb-2" placeholder="09xxxxxxxxx">
+                <span class="error-msg"></span>
+               </div>
+           
+               <div class="mb-3">
+                <select name="concept" class="pt-2 pb-2">
+                    <option value="ٌ" selected > تو چه زمینه ای مشاوره میخواین؟ </option>
+                    <option value="surgery"> جراحی زیبایی </option>
+                    <option value="lift"> لیفت </option>
+                    <option value="injection"> تزریق </option>
+                    <option value="slimming"> لاغری </option>
+                    <option value="laser"> خدمات لیزر </option>
+                </select>
+                <span class="error-msg"></span>
+               </div>
+        
+                <div class="mb-0">
+                <button type="submit" class="pt-2 pb-2 my-btn"><span> ثبت درخواست </span></button>
+                <span class="success-msg"></span>
+            </div>
+            </form>
+        
+            <div class="d-flex align-items-center col-6 col-lg-3 col-md-4">
+            <img data-aos="fade-right" src="asset/img/home/doctor.webp" class="img" alt="doctor">
+        </div>
+        </div>
+           </section>
+           <!-- end consultation form -->
+        </main>
+                 <!-- start footer -->
+            <footer>
+        
+                <div class="footer container-fluid">
+                    <div class="container">
+                    <div class="row justify-content-center">
+        
+                        <div class="col-12 col-sm-6 mb-sm-0 mb-4" data-aos="fade-left">
+                            <h4> ارتباط با ما </h4>
+        
+                            
+                            <div class="mb-2">
+                                <div class="mb-1 mb-lg-0">
+                                <svg class="responsive-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.807 13.699">
+                                    <g transform="translate(-466.594 -434.467)">
+                                        <path
+                                            d="M12.278,2.25a4.4,4.4,0,0,0-4.4,4.4c0,3.425,4.4,9.3,4.4,9.3s4.4-5.871,4.4-9.3A4.4,4.4,0,0,0,12.278,2.25Zm0,5.838a1.434,1.434,0,1,1,1.434-1.434A1.435,1.435,0,0,1,12.278,8.088Z"
+                                            transform="translate(458.719 432.217)" fill="aliceblue"></path>
+                                    </g>
+                                </svg>
+                                <span> آدرس: </span>
+                                </div>
+        
+                                <span> پاسداران، گلستان ششم، پلاک ۷۶، واحد ۱۳ </span>
+                            </div>
+        
+        
+                            <div class="mb-2">
+                                <div class="mb-1 mb-lg-0">
+                                <svg class="responsive-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                    xml:space="preserve">
+                                    <path fill="aliceblue"
+                                        d="M50 247.389H10C10 183.98 34.693 124.367 79.529 79.53 124.366 34.693 183.98 10 247.389 10v40C138.548 50 50 138.548 50 247.389z" />
+                                    <path fill="aliceblue"
+                                        d="M119.257 247.389h-40c0-92.708 75.424-168.132 168.132-168.132v40c-70.653 0-128.132 57.479-128.132 128.132z" />
+                                    <path fill="aliceblue"
+                                        d="M188.513 247.389h-40c0-54.52 44.355-98.875 98.875-98.875v40c-32.463-.001-58.875 26.411-58.875 58.875zM318.901 318.901c60.399-60.399 62.009-105.496 62.009-105.496l-41.071-41.071L444.53 67.642l37.452 37.452a68.312 68.312 0 0 1 19.868 52.84c-2.891 43.448-23.755 124.181-121.745 222.171S201.381 498.958 157.934 501.849a68.312 68.312 0 0 1-52.84-19.868L67.642 444.53l104.691-104.691 41.071 41.071s45.098-1.611 105.497-62.009z" />
+                                    <path fill="aliceblue"
+                                        d="m33.816 430.032 124.017-124.018 24.16 24.16L57.975 454.19zM454.197 57.977 330.179 181.995l-24.16-24.16L430.037 33.817z" />
+                                </svg>
+                                <span> تلفن: </span>
+                                </div>
+                                <a class="ltr" href="tel:02122567359">۰۲۱-۲۲۳۳۴۴۵۵۶۶</a>
+                            
+                            </div>
+        
+                            <div class="mb-2">
+                                <div class="mb-1 mb-lg-0">
+                                <svg class="responsive-svg" xmlns="http://www.w3.org/2000/svg" width="13.892" height="10.407"
+                                    viewBox="0 0 13.892 10.407">
+                                    <path id="emailalt"
+                                        d="M6.964,5.2.018,1.694V.867A.827.827,0,0,1,.276.251.845.845,0,0,1,.886,0H13.041a.845.845,0,0,1,.61.251.827.827,0,0,1,.258.617v.826Zm-.434.867H7.4L13.91,2.7V9.54a.879.879,0,0,1-.868.867H.887a.835.835,0,0,1-.61-.257.833.833,0,0,1-.258-.61V2.7Z"
+                                        transform="translate(-0.018)" fill="aliceblue"></path>
+                                </svg>
+                                <span> ایمیل: </span>
+                                </div>
+                                <a href="mailto:info@xxx@gmail.com">info@xxxxgmail.com</a>
+                            </div>
+                        </div>
+        
+        
+        
+                        <div class="col-12 col-sm-6 mb-sm-0 mb-4" data-aos="fade-right">
+                            <h4> صفحات پربازدید </h4>
+                            <ul>
+                                <li><a href="./index.html">خانه</a></li>
+                                <li><a href="./about.html">درباره ما</a></li>
+                                <li><a href="./contact.html">تماس باما</a></li>
+                                <li><a href="./gallery.html">گالری</a></li>
+                                <li><a href="./lift.html">لیفت صورت</a></li>
+                                <li><a href="./face-surgery.html">جراحی صورت</a></li>
+                                
+                                
+                                
+                                
+                            </ul>
+                        </div>
+        
+        
+                    </div>
+                </div>
+                </div>
+        
+            </footer>
+            <!-- end footer -->
+</div>
+<!-- end without overflowX -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="dist/bootstrap/bootstrap.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
